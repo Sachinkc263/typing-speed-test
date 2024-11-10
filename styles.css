@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#252525eb;
+    color: #f3f3f3;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 50px;
+    background-color: #303030;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+.navbars ul{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.navbars ul li a{
+    color: #f3f3f3;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.navbars ul li a:hover{
+    color: #ffcc00;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url('/images/hero-image.webp'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.hero-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.721);
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 900px;
+}
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+.hero-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #ffcc00;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #b28f03;
+}
+
+.test-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+#typetest {
+    max-width: 70%;
+    background-color: #2222226b;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+#typetest-title{
+	font-size: 3rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ffffff
+}
+.input-field{
+   opacity: 0;
+   z-index: -999;
+   position: absolute;
+}
+.typing-text {
+    overflow: hidden;
+}
+.typing-text::-webkit-scrollbar{
+    width: 0;
+  }
+.typing-text #quote {
+    font-size: 21px;
+    text-align:justify;
+    letter-spacing: 1px;
+    /* word-break: break-all; */
+    color: #bbb;
+	margin-bottom:20px;
+}
+.typing-text #quote span{
+    position: relative;
+}
+.typing-text #quote span.correct{
+    color: #56964f;
+}
+.typing-text #quote span.incorrect{
+    color: #cb3439;
+    outline: 1px solid #fff;
+    background: #ffc0cb;
+    border-radius: 4px;
+}
+.typing-text #quote span.active{
+    color: #17A2B8;
+}
+.typing-text #quote span.active::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 5px;
+    background: #17A2B8;
+    animation: blink 1s ease-in-out infinite;   
+}
+@keyframes blink{
+    50%{ 
+      opacity: 1; 
+    }
+  }
+.results {
+	display: flex;
+    justify-content: space-between;
+	margin-top: 20px;
+    font-size: 1rem;
+    color: #f3f3f3;
+}
+.results div{
+    display: flex;
+    align-items:center;
+}
+.results img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+
+}
+#wpm_text,#accuracy_text,#time_text{
+	font-size: 1.2rem;
+    margin-left: 2px;
+}
+.reset{
+    margin-top: 20px;
+}
+#restart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+	padding: 10px 20px; 
+    background-color: #252525; 
+    color:#f3f3f3;
+    border: none;
+    border-radius: 5px;
+	font-size: 1rem;
+    cursor: pointer;
+	transition: background-color 0.3s;
+}
+#restart:hover{
+    background-color: #666;
+}
+/* FAQ Section Styling */
+.faqs-container {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    color: #f3f3f3;
+    /* border-radius: 10px; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+ .faqs-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background-color: #444;
+    color: #f3f3f3;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #555;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #222;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.faq-answer p {
+    padding: 15px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* JavaScript-controlled class for open answers */
+.faq-answer.open {
+    max-height: 200px; /* Adjust max-height as necessary */
+} */
+
+footer {
+    background-color: #303030;
+    color: #f3f3f3;
+    padding: 20px 50px;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer-content p {
+    font-size: 1rem;
+    margin-bottom:20px ;
+}
+
+#social-media-icons {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+#social-media-icons a {
+    display: inline-block;
+}
+#social-media-icons img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1); /* Makes the icons white on a dark background */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+#social-media-icons a:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.2) invert(1); /* Slightly dims the icons on hover */
+}
+/* Responsive styling */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+    #title {
+        font-size: 2.5rem;
+    }
+    #wpm_text,#accuracy_text,#time_text,#input-box,#quote {
+        font-size: 1rem;
+    }
+    
+}

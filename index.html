@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo" width="200px" height="30px">
+        </div>
+        <nav class="navbars">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#typetest">TypeTest</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#social-media-icons">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <section class="hero-content">
+            <h2>Test Your Typing Speed!</h2>
+            <p>Test your speed and accuracy using our free typing test. Use your results to see how far a proper typing method could take you!. Take a deep breath, relax your fingers, and take it slow. You need to be focused and not annoyed when attempting the typing speed test.</p>
+            <a href="#typetest" class="hero-button">Start Test</a>
+        </section>
+        
+    </div>
+    <!-- Typing Test Section -->
+    <div class="test-container">
+        <section id="typetest">
+            <h1 id="typetest-title">Typing Speed Test</h1>
+            <input type="text" class="input-field" aria-label="Typing Input" onpaste="return false">
+            <div class="typing-content">
+                <div class="typing-text">
+                    <p id="quote"></p>
+                </div>
+                <div class="results">
+                    <div class="wpm">
+                        <img id="wpm_icon" src="/images/wpm.png" alt="wpm">
+                        <span id="wpm_text">WPM:0</span>
+                    </div>
+                    <div class="accuracy">
+                        <img id="accuracy_icon" src="/images/accuracy.png" alt="accuracy">
+                        <span id="accuracy_text">Accuracy:0%</span>
+                    </div>
+                    <div class="time">
+                        <img id="time_icon" src="/images/clock.png" alt="clock">
+                        <span id="time_text">Time:60s</span>
+                    </div>
+                </div>
+                <div class="reset">
+                    <button id="restart">
+                        <img id="reset_icon" src="/images/reset.svg" alt="Reset" width="20px" height="20px">
+                        <span id="reset_text">Restart</span></button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="faqs-container">
+        <section id="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question">What is a typing speed test?</button>
+            <div class="faq-answer">
+                <p>A typing speed test measures how quickly you can type words on a keyboard. It calculates your speed in words per minute (WPM) and often also tracks your accuracy by counting errors.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">How is my typing speed calculated?</button>
+            <div class="faq-answer">
+                <p>Your typing speed is calculated by counting the number of words you type correctly in one minute. A "word" is typically considered to be five characters, including spaces.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">What is a good typing speed?</button>
+            <div class="faq-answer">
+                <p>A good typing speed depends on experience:<br>
+                    <strong>Beginner:</strong> 20–30 WPM<br>
+                    <strong>Average:</strong> 40–50 WPM<br>
+                    <strong>Advanced:</strong> 60–80 WPM<br>
+                    <strong>Professional:</strong> 90+ WPM<br>
+                    Most people aim for at least 40 WPM to be comfortable in everyday typing tasks.
+                </p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">Does accuracy matter, or is it just about speed?</button>
+            <div class="faq-answer">
+                <p>Both speed and accuracy are essential. A high speed with low accuracy means you may need to correct mistakes frequently, reducing overall productivity. Most typing tests display both speed and accuracy scores.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">How can I improve my typing speed?</button>
+            <div class="faq-answer">
+                <p>Regular practice is the key to improving typing speed. Using typing software or games, focusing on correct finger placement, and avoiding looking at the keyboard can help improve both speed and accuracy over time.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">What’s the difference between WPM and CPM?</button>
+            <div class="faq-answer">
+                <p>WPM stands for Words Per Minute, while CPM stands for Characters Per Minute. CPM counts each keystroke, including spaces, while WPM groups characters into word units. Some tests use CPM, but WPM is more commonly used.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">Why does my score differ across different typing tests?</button>
+            <div class="faq-answer">
+                <p>Different typing tests use different word lists and lengths, which can impact your speed and accuracy. Some tests also penalize errors more heavily, affecting your overall score.</p>
+            </div>
+        </div>
+    
+        <div class="faq-item">
+            <button class="faq-question">How often should I practice to improve my typing?</button>
+            <div class="faq-answer">
+                <p>Practicing for about 10-15 minutes each day is usually enough for steady improvement. Consistency is more important than long practice sessions, so regular, short practice works best.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Does the device I use affect my typing speed?</button>
+            <div class="faq-answer">
+                <p>Yes, the device can impact your typing speed. The type and layout of the keyboard, the device’s processing speed, and screen size can all influence your performance.</p>
+            </div>
+        </div>
+        </section>
+    </div>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Typing Speed Test. All rights reserved.</p>
+            <div id="social-media-icons">
+                <a href="https://www.facebook.com/" target="_blank" ><img src="/images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com/" target="_blank" ><img src="/images/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank" ><img src="/images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/" target="_blank" ><img src="/images/linkedin.png" alt="Linkedin"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/js/paragraphs.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html> 
