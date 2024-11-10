@@ -26,4 +26,3 @@ To run this project locally:
    ```bas
    git clone https://github.com/Sachinkc263/typing-speed-test.git
 2. Open the index.html file in your browser to start the typing test.
-3. 
